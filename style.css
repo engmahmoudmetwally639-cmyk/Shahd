@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 /* تنسيقات الصفحة العامة */
 body {
     background-color: #fffaf0; /* لون بيج دافئ وفاتح (الخلفية) */
