@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أرشيفنا | شهد</title>
+    <link rel="stylesheet" href="style.css">
+    <section class="friendship-stats">
+    <h2>عداد أغلى سنين عمري ⏳</h2>
+    <div id="timer-container">
+        <div class="time-unit">
+            <span id="days">0</span>
+            <p>يوم</p>
+        </div>
+        <div class="time-unit">
+            <span id="hours">0</span>
+            <p>ساعة</p>
+        </div>
+        <div class="time-unit">
+            <span id="minutes">0</span>
+            <p>دقيقة</p>
+        </div>
+        <div class="time-unit">
+            <span id="seconds">0</span>
+            <p>ثانية</p>
+        </div>
+    </div>
+    <p class="timer-caption">من أول "ألو" في جروب الراب لحد اللحظة دي.. ❤️</p>
+</section>
+</head>
+<body>
+
+    <header>
+        <h1>حكايتنا 📝</h1>
+        <p>توثيق لأجدع صداقة و"بير الأسرار"</p>
+    </header>
+
+    <section class="timeline">
+    <h2>اول مرة اتكلمنا برايفيت  ⏳</h2>
+    
+    <!-- الموقف الأول: يوم المعرفة -->
+    <div class="event first-meet">
+        <div class="date-badge">16 مارس 2023</div>
+        <h3>أول مرة عرفتك 🤍</h3>
+        <p>
+            فاكرة جروب الراب؟ لما قعدنا نهزر على الواد والبنت.. اليوم ده كان بداية كل حاجة حلوة. 
+            في الحقيقة، ده كان <strong>أحسن يوم في حياتي</strong> لأني عرفت القمورة ديه. 
+            لسه فاكر كمية الاستيكرز اللي شاركناها والهزار اللي مخلصش وقتها.. كانت ليلة ميتنسيش فيها ضحكتنا.
+        </p>
+        <span class="stickers-emoji">✨ 😂 💬 🎧</span>
+    </div>
+<!-- الموقف الثاني بتعديل التفاعل -->
+<div class="event secret-cave" id="caveCard" onclick="revealSecret()">
+    <div class="date-badge">يونيو 2023</div>
+    <h3>من صحاب ل صحاب بجد    🌙</h3>
+    <div id="secretContent" class="hidden-content">
+        <p>
+            في شهر 6، اكتشفنا إننا مش مجرد "صحاب" وخلاص.. إحنا بقينا صحاب بجد. 
+            بدأنا نفتح قلوبنا، وبدأتي تحكي أسرارك وأنا كمان، ومن هنا بقينا لبعض <strong>الكهف والركن الهادئ</strong> اللي بنهرب فيه من دوشة العالم.
+            ده كان أحلى يوم في الشهر كله، لأن من بعده اتولدت العلاقة القمورة زيك ديه.
+        </p>
+        <span class="cave-icon">🕯️ ✨ 🔒</span>
+    </div>
+    <p id="clickPrompt" style="color: #a1887f; font-weight: bold; cursor: pointer;">
+        اضغط لفتح الكهف.. 🔑
+    </p>
+</div>
+<section class="vault-section">
+    <h2>خزنة الأسرار 🔒</h2>
+    <div id="vault-container">
+        <!-- الواجهة قبل فتح الخزنة -->
+        <div id="lock-screen">
+            <p>المكان ده مش لأي حد.. دخل كلمة السر عشان تفتح الأسرار</p>
+            <input type="password" id="vaultPass" placeholder="كلمة السر..">
+            <button onclick="checkVault()">فتح الخزنة</button>
+        </div>
+
+        <!-- المحتوى المخفي (مش هيظهر غير بالباسورد) -->
+        <div id="vault-content" class="hidden-vault">
+            <div class="secret-note">
+                <h3>السر الاول اللي محدش يعرفه غيرنا</h3>
+               <p> فاكرة لما كنتي بتدعميني وتقوليلي مهندسي الصغير يا دكتورتي بجد الحاجات ديه فرقت معايا كتير وخلتني أحس إني مش لوحدي في أي حاجة بمر بيها شكرا علي كل لحظة قضتيها معايا وبتقضيها معايا انتي بيتسي يا شهودة ومش عارف هكمل حياتي منغيرك ازاي يعني ومتزعليش عشان معملتيش اسرار اخر يوم مدرسة في تانية ثانوي بس نا بجد عامل الموقع ده نحط فيه كل ذكرياتنا عشان تكون ريفرنس بيكي انا بحب وجودك جدا يا شهد</p>            </div>
+            <div class="secret-note">
+                <h3>السر التاني</h3>
+                <p>ده بقي هخليه عشان انتي اللي تكتبيه ياروحي</p>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- ممكن تضيف مواقف تانية هنا بنفس الطريقة -->
+<section class="playlist">
+    <h2>مزيكا بتفكرنا ببعض 🎵</h2>
+    <div class="song-container">
+        <div class="song-card">
+            <h3>Swim-BTS🎧</h3>
+            <p>"الأغنية دي بالذات ليها مكانة تانية.. بتفكرني بكل مرة كنا بنحكي فيها بليل والصبح وكل وقت"</p>            
+            <!-- مشغل اليوتيوب المصغر -->
+            <div class="video-wrapper">
+                <iframe 
+                    width="100%" 
+                    height="200" 
+                    src="https://www.youtube.com/embed/b4iVv91Z6lY" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+<div style="text-align: center; margin: 40px 0;">
+    <button id="heartBtn" onclick="spreadLove()" style="padding: 15px 30px; background: #ff6b6b; color: white; border: none; border-radius: 50px; font-size: 1.2em; cursor: pointer; box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);">
+        شكراً إنك في حياتي.. 💌
+    </button>
+</div>
+
+<!-- المكان اللي القلوب هتظهر فيه -->
+<div id="heart-container"></div>
+    <footer>
+        <footer>
+    <div class="footer-content">
+        <p>كل ثانية وإحنا سوا هي مكسب ليا.. ✨</p>
+        <p>صُنع بكل حب بواسطة "مهندسك الصغير" لـ "أجدع شهد" في 2026</p>
+        <div class="footer-hearts">❤️ 🐈 🎧</div>
+    </div>
+</footer>
+<script src="script.js"></script>
+<!-- صندوق الرسالة المخصص -->
+<div id="customAlert" class="modal">
+    <div class="modal-content">
+        <span class="heart-icon">💝</span>
+        <p id="alertMsg"></p>
+        <button onclick="closeAlert()">فتحت عيني خلاص.. 🤍</button>
+    </div>
+</div>
+</body>
+</html>
