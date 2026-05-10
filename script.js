@@ -105,6 +105,3 @@ function spreadLove() {
         // مسح القلب بعد ما يخلص الحركة عشان ميتعبش المتصفح
         setTimeout(() => { heart.remove(); }, 5000);
     }
-} html {
-    scroll-behavior: smooth;
-}
